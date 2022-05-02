@@ -1,0 +1,53 @@
+@charset "UTF-8"
+
+body {
+    font-family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header {
+    padding: 50px o;
+}
+
+.header .logo {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.global-nav {
+    padding: 40px 0;
+}
+
+.global-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.global-nav ul li {
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    margin-right: 80px;
+}
