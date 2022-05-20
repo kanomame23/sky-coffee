@@ -1,4 +1,4 @@
-/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/*! destyle.css v3.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 
 /* Reset box-model and set borders */
 /* ============================================ */
@@ -7,8 +7,8 @@
 ::before,
 ::after {
   box-sizing: border-box;
-  border-style: solid;
   border-width: 0;
+  border-style: solid;
 }
 
 /* Document */
@@ -22,8 +22,9 @@
 
 html {
   line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+
   -webkit-tap-highlight-color: transparent; /* 3*/
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections */
@@ -104,13 +105,13 @@ dd {
  */
 
 hr {
+  clear: both;
+  overflow: visible; /* 2 */
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
-  overflow: visible; /* 2 */
-  border-top-width: 1px;
   margin: 0;
-  clear: both;
   color: inherit;
+  border-top-width: 1px;
 }
 
 /**
@@ -135,9 +136,9 @@ address {
  */
 
 a {
-  background-color: transparent;
   text-decoration: none;
   color: inherit;
+  background-color: transparent;
 }
 
 /**
@@ -185,18 +186,18 @@ small {
 
 sub,
 sup {
+  position: relative;
   font-size: 75%;
   line-height: 0;
-  position: relative;
   vertical-align: baseline;
 }
 
 sub {
-  bottom: -0.25em;
+  bottom: -.25em;
 }
 
 sup {
-  top: -0.5em;
+  top: -.5em;
 }
 
 /* Replaced content */
@@ -228,17 +229,18 @@ input,
 optgroup,
 select,
 textarea {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  vertical-align: middle;
+  text-transform: inherit; /* 2 */
+  color: inherit;
+  border-radius: 0;
+  background: transparent;
+
   -webkit-appearance: none; /* 1 */
   appearance: none;
-  vertical-align: middle;
-  color: inherit;
-  font: inherit;
-  background: transparent;
-  padding: 0;
-  margin: 0;
-  border-radius: 0;
-  text-align: inherit;
-  text-transform: inherit; /* 2 */
 }
 
 /**
@@ -298,9 +300,9 @@ option {
  */
 
 fieldset {
+  min-width: 0;
   margin: 0;
   padding: 0;
-  min-width: 0;
 }
 
 legend {
@@ -354,8 +356,9 @@ textarea {
  */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
+
+  -webkit-appearance: button; /* 1 */
 }
 
 /**
@@ -402,7 +405,6 @@ summary {
 
 table {
   border-color: inherit; /* 1 */
-  border-collapse: collapse;
 }
 
 caption {
@@ -411,11 +413,11 @@ caption {
 
 td,
 th {
-  vertical-align: top;
   padding: 0;
+  vertical-align: top;
 }
 
 th {
-  text-align: left;
   font-weight: bold;
+  text-align: left;
 }
